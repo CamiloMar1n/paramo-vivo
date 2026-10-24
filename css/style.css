@@ -1,0 +1,191 @@
+/* ==========================================
+   Páramo Vivo - Hoja de estilos
+   ========================================== */
+
+/* Variables de colores y fuente */
+:root {
+  --color-primario: #2e5e4e;
+  --color-secundario: #2a7fa8;
+  --color-claro: #a8d5ba;
+  --color-fondo: #f4f1e8;
+  --color-texto: #1f2d2a;
+  --color-error: #b02a37;
+  --fuente-principal: 'Segoe UI', Arial, sans-serif;
+}
+
+/* ---------- General ---------- */
+
+/* Con flexbox dejo el footer siempre abajo */
+body {
+  font-family: var(--fuente-principal);
+  background-color: var(--color-fondo);
+  color: var(--color-texto);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+
+h1, h2 {
+  color: var(--color-primario);
+}
+
+/* ---------- Navbar ---------- */
+
+.barra-principal {
+  background-color: var(--color-primario);
+}
+
+.barra-principal .nav-link:hover {
+  color: var(--color-claro);
+}
+
+.barra-principal .nav-link.active {
+  color: var(--color-claro);
+  font-weight: bold;
+}
+
+/* ---------- Botones ---------- */
+
+.btn-success {
+  background-color: var(--color-primario);
+  border-color: var(--color-primario);
+}
+
+.btn-success:hover {
+  background-color: var(--color-secundario);
+  border-color: var(--color-secundario);
+}
+
+/* ---------- Hero del index ---------- */
+
+.hero {
+  min-height: 70vh;
+  background-color: var(--color-primario);
+  background-image: linear-gradient(rgba(46, 94, 78, 0.55), rgba(42, 127, 168, 0.55)),
+                    url("../img/hero.jpg");
+  background-size: cover;
+  background-position: center 65%; /* la foto es vertical, con esto se ve la montaña y los frailejones */
+}
+
+.hero h1 {
+  color: white;
+  font-size: 3.5rem;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+}
+
+.hero .lead {
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+}
+
+/* ---------- Recuadro del aside ---------- */
+
+.dato-aside {
+  background-color: var(--color-claro);
+  border-left: 5px solid var(--color-secundario);
+  border-radius: 8px;
+}
+
+/* ---------- Cards ---------- */
+
+.card {
+  border: none;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* Todas las fotos de las cards con la misma altura */
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+/* ---------- Galería ---------- */
+
+.figura-galeria {
+  margin: 0;
+}
+
+/* Fotos del mismo tamaño aunque unas sean verticales y otras horizontales */
+.figura-galeria img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.figura-galeria figcaption {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* ---------- Tabla ---------- */
+
+.tabla-paramos caption {
+  caption-side: top;
+  font-weight: bold;
+  color: var(--color-primario);
+}
+
+.tabla-paramos thead {
+  --bs-table-bg: var(--color-primario);
+  --bs-table-color: white;
+  color: white;
+}
+
+.tabla-paramos tfoot {
+  --bs-table-bg: var(--color-claro);
+  font-weight: bold;
+}
+
+/* ---------- Formulario ---------- */
+
+.mensaje-error {
+  color: var(--color-error);
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+}
+
+/* Estas dos clases las va a poner el JavaScript */
+.campo-invalido {
+  border-color: var(--color-error) !important;
+}
+
+.campo-valido {
+  border-color: var(--color-primario) !important;
+}
+
+/* ---------- Footer ---------- */
+
+.pie-pagina {
+  background-color: var(--color-primario);
+  color: white;
+}
+
+/* ---------- Pantallas pequeñas (celular) ---------- */
+
+@media (max-width: 576px) {
+  .hero {
+    min-height: 55vh;
+  }
+
+  .hero h1 {
+    font-size: 2.3rem;
+  }
+
+  .card-img-top {
+    height: 170px;
+  }
+
+  .figura-galeria img {
+    height: 160px;
+  }
+}

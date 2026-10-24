@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portal sobre el cuidado del agua y los frailejones en los páramos de Colombia">
+  <meta name="keywords" content="agua, frailejones, páramo, medio ambiente, sostenibilidad">
+  <meta name="author" content="Juan Camilo Marín Quintero">
+  <meta property="og:title" content="Páramo Vivo - Inicio">
+  <meta property="og:description" content="Portal sobre el cuidado del agua y los frailejones en los páramos de Colombia">
+  <title>Páramo Vivo - Inicio</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Mi CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark barra-principal" aria-label="Menú principal">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Páramo Vivo</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+          data-bs-target="#menuPrincipal" aria-controls="menuPrincipal"
+          aria-expanded="false" aria-label="Abrir menú de navegación">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menuPrincipal">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="informacion.html">Información</a></li>
+            <li class="nav-item"><a class="nav-link" href="galeria.html">Galería</a></li>
+            <li class="nav-item"><a class="nav-link" href="tabla.html">Datos</a></li>
+            <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero / banner principal -->
+    <section class="hero text-center text-white d-flex align-items-center">
+      <div class="container">
+        <h1>Páramo Vivo</h1>
+        <p class="lead">Cuidemos el agua y protejamos a los frailejones, los guardianes del páramo</p>
+        <a href="informacion.html" class="btn btn-success btn-lg">Conocer más</a>
+      </div>
+    </section>
+
+    <!-- Resumen del portal -->
+    <section class="container my-5">
+      <div class="row">
+        <article class="col-lg-8">
+          <h2>¿De qué trata este portal?</h2>
+          <p>
+            Páramo Vivo es un portal para aprender por qué es importante cuidar el agua y los
+            páramos. Los frailejones son plantas propias de estos ecosistemas y ayudan a
+            mantener el agua que después llega a ríos, acueductos y ciudades.
+          </p>
+          <p>
+            Aquí vas a encontrar información, imágenes, datos de algunos páramos de Colombia
+            y un formulario para escribirnos si quieres aportar o tienes dudas.
+          </p>
+        </article>
+
+        <aside class="col-lg-4">
+          <div class="dato-aside p-3">
+            <h3 class="h5">¿Sabías que...?</h3>
+            <p class="mb-0">
+              Los frailejones atrapan la humedad de la neblina con sus hojas peludas y la
+              van soltando poco a poco al suelo. Por eso se les dice "fábricas de agua".
+            </p>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- Accesos rápidos con cards de Bootstrap -->
+    <section class="container mb-5">
+      <h2 class="text-center mb-4">Explora el portal</h2>
+      <div class="row g-4">
+
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img src="img/frailejon-1.jpg" class="card-img-top" alt="Primer plano de frailejones con flores amarillas">
+            <div class="card-body">
+              <h3 class="card-title h5">Información</h3>
+              <p class="card-text">Conoce qué son los frailejones y por qué cuidar el agua es tan importante.</p>
+              <a href="informacion.html" class="btn btn-success">Ver información</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img src="img/agua-1.jpg" class="card-img-top" alt="Superficie de agua tranquila con ondas circulares">
+            <div class="card-body">
+              <h3 class="card-title h5">Galería</h3>
+              <p class="card-text">Mira imágenes y un video de los páramos y del agua que nace en ellos.</p>
+              <a href="galeria.html" class="btn btn-success">Ver galería</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img src="img/paramo-1.jpg" class="card-img-top" alt="Frailejones en un páramo con montañas al fondo">
+            <div class="card-body">
+              <h3 class="card-title h5">Datos</h3>
+              <p class="card-text">Consulta una tabla con algunos de los páramos de Colombia.</p>
+              <a href="tabla.html" class="btn btn-success">Ver datos</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="pie-pagina text-center py-4">
+    <p class="mb-0">Páramo Vivo - Portal sobre el cuidado del agua y los frailejones</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
